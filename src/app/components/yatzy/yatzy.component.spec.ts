@@ -17,6 +17,9 @@ describe('Yatzy', () => {
     fixture.detectChanges();
   });
 
+  it('should be ok', () =>{
+    expect(component).toBeTruthy();
+  })
 });
 
 

@@ -71,18 +71,41 @@ export class YatzyScoringService {
     let score: number = 0;
     for (const [key, value] of Object.entries(result)) {
       const isPair = value === 2;
-      const isThreeOfAKind = value === 3;
-      const isFourOfAKind = value === 4;
       if (isPair){
         score+= parseInt(key) * 2
       }
+    }
+    return score;
+  }
+
+  public calculateThreeOfAKindScore(dices: Dices): number {
+    let result: {1: number, 2: number, 3: number, 4:number, 5: number, 6: number } = {1: 0, 2:0, 3:0, 4:0, 5:0, 6:0};
+    for (const value of Object.values(dices)){
+      // @ts-ignore
+      result[value]++;
+    }
+    let score: number = 0;
+    for (const [key, value] of Object.entries(result)) {
+      const isThreeOfAKind = value === 3;
 
       if (isThreeOfAKind){
-        score = value * 3
+        score = parseInt(key) * 3
       }
+    }
+    return score;
+  }
+  public calculateFourOfAKindScore(dices: Dices): number {
+    let result: {1: number, 2: number, 3: number, 4:number, 5: number, 6: number } = {1: 0, 2:0, 3:0, 4:0, 5:0, 6:0};
+    for (const value of Object.values(dices)){
+      // @ts-ignore
+      result[value]++;
+    }
+    let score: number = 0;
+    for (const [key, value] of Object.entries(result)) {
+      const isFourOfAKind = value === 4;
 
       if (isFourOfAKind){
-        score = value * 4
+        score = parseInt(key) * 4
       }
     }
     return score;

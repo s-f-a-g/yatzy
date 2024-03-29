@@ -82,12 +82,12 @@ describe('YatzyScoringService', () => {
     const expectedWithNoValueFound = range * 0;
 
     it('score only the twos', () => {
-      expect(service.twos(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
-      expect(service.twos(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
-      expect(service.twos(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
-      expect(service.twos(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
-      expect(service.twos(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
-      expect(service.twos(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
+      expect(service.calculateTwosScore(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
+      expect(service.calculateTwosScore(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
+      expect(service.calculateTwosScore(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
+      expect(service.calculateTwosScore(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
+      expect(service.calculateTwosScore(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
+      expect(service.calculateTwosScore(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
     });
   });
 
@@ -108,12 +108,12 @@ describe('YatzyScoringService', () => {
     const expectedWithNoValueFound = range * 0;
 
     it('score only the threes', () => {
-      expect(YatzyComponent.threes(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
-      expect(YatzyComponent.threes(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
-      expect(YatzyComponent.threes(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
-      expect(YatzyComponent.threes(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
-      expect(YatzyComponent.threes(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
-      expect(YatzyComponent.threes(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
+      expect(service.calculateThreesScore(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
+      expect(service.calculateThreesScore(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
+      expect(service.calculateThreesScore(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
+      expect(service.calculateThreesScore(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
+      expect(service.calculateThreesScore(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
+      expect(service.calculateThreesScore(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
     });
   });
 
@@ -134,12 +134,12 @@ describe('YatzyScoringService', () => {
     const expectedWithNoValueFound = range * 0;
 
     it('score only the fours', () => {
-      expect(YatzyComponent.fours(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
-      expect(YatzyComponent.fours(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
-      expect(YatzyComponent.fours(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
-      expect(YatzyComponent.fours(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
-      expect(YatzyComponent.fours(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
-      expect(YatzyComponent.fours(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
+      expect(service.calculateFoursScore(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
+      expect(service.calculateFoursScore(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
+      expect(service.calculateFoursScore(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
+      expect(service.calculateFoursScore(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
+      expect(service.calculateFoursScore(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
+      expect(service.calculateFoursScore(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
     });
   });
 
@@ -160,12 +160,12 @@ describe('YatzyScoringService', () => {
     const expectedWithNoValueFound = range * 0;
 
     it('score only the fives', () => {
-      expect(YatzyComponent.fives(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
-      expect(YatzyComponent.fives(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
-      expect(YatzyComponent.fives(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
-      expect(YatzyComponent.fives(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
-      expect(YatzyComponent.fives(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
-      expect(YatzyComponent.fives(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
+      expect(service.calculateFivesScore(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
+      expect(service.calculateFivesScore(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
+      expect(service.calculateFivesScore(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
+      expect(service.calculateFivesScore(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
+      expect(service.calculateFivesScore(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
+      expect(service.calculateFivesScore(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
     });
   });
 
@@ -186,12 +186,12 @@ describe('YatzyScoringService', () => {
     const expectedWithNoValueFound = range * 0;
 
     it('score only the fives', () => {
-      expect(YatzyComponent.sixes(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
-      expect(YatzyComponent.sixes(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
-      expect(YatzyComponent.sixes(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
-      expect(YatzyComponent.sixes(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
-      expect(YatzyComponent.sixes(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
-      expect(YatzyComponent.sixes(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
+      expect(service.calculateSixesScore(dicesWithOneValueFound)).toBe(expectedWithOneValueFound);
+      expect(service.calculateSixesScore(dicesWithTwoValuesFound)).toBe(expectedWithTwoValuesFound);
+      expect(service.calculateSixesScore(dicesWithThreeValuesFound)).toBe(expectedWithThreeValuesFound);
+      expect(service.calculateSixesScore(dicesWithFourValuesFound)).toBe(expectedWithFourValuesFound);
+      expect(service.calculateSixesScore(dicesWithFiveValuesFound)).toBe(expectedWithFiveValuesFound);
+      expect(service.calculateSixesScore(dicesWithNoValueFound)).toBe(expectedWithNoValueFound);
     });
   });
 
@@ -200,9 +200,9 @@ describe('YatzyScoringService', () => {
       const yatzy6: Dices = new Dices(6, 6,6 ,6,6);
       const yatzy3: Dices = new Dices(3, 3,3 ,3,3);
       const notYatzy: Dices = new Dices(6, 1,6 ,6,6);
-      expect(YatzyComponent.yatzy(yatzy6)).toBe(50);
-      expect(YatzyComponent.yatzy(yatzy3)).toBe(50);
-      expect(YatzyComponent.yatzy(notYatzy)).toBe(0);
+      expect(service.getYatzyScore(yatzy6)).toBe(50);
+      expect(service.getYatzyScore(yatzy3)).toBe(50);
+      expect(service.getYatzyScore(notYatzy)).toBe(0);
     })
   })
 
@@ -210,8 +210,8 @@ describe('YatzyScoringService', () => {
     it('should score pair ', () => {
       const yatzyPair: Dices = new Dices(3, 3,1 ,4,5);
       const yatzyNoSimilar: Dices = new Dices(3, 2,1 ,4,5);
-      expect(YatzyComponent.getScoreForSameKind(yatzyPair)).toBe(6);
-      expect(YatzyComponent.getScoreForSameKind(yatzyNoSimilar)).toBe(0);
+      expect(service.calculateScoreForSameKind(yatzyPair)).toBe(6);
+      expect(service.calculateScoreForSameKind(yatzyNoSimilar)).toBe(0);
     })
   })
 
@@ -219,57 +219,60 @@ describe('YatzyScoringService', () => {
     it('should score two pairs ', () => {
       const yatzyTwoPairs: Dices = new Dices(6, 6,5 ,5,4);
       const yatzyNoSimilar: Dices = new Dices(1, 6,3 ,5,4);
-      expect(YatzyComponent.getScoreForSameKind(yatzyTwoPairs)).toBe(22);
-      expect(YatzyComponent.getScoreForSameKind(yatzyNoSimilar)).toBe(0);
+      expect(service.calculateScoreForSameKind(yatzyTwoPairs)).toBe(22);
+      expect(service.calculateScoreForSameKind(yatzyNoSimilar)).toBe(0);
     })
   })
 
   describe('Three Of A Kind', () => {
     it('should score three of a kind ', () => {
-      const yatzyThreeOfAKind: Dices = new Dices(3, 3,3 ,4,5);
+      const yatzyThreeOfAKindA: Dices = new Dices(3, 3,3 ,4,5);
+      const yatzyThreeOfAKindB: Dices = new Dices(5, 5,3 ,4,5);
+      const yatzyThreeOfAKindC: Dices = new Dices(1, 1,3 ,1,5);
       const yatzyNoSimilar: Dices = new Dices(1, 2,3 ,4,5);
-      expect(YatzyComponent.getScoreForSameKind(yatzyThreeOfAKind)).toBe(9);
-      expect(YatzyComponent.getScoreForSameKind(yatzyNoSimilar)).toBe(0);
+      expect(service.calculateThreeOfAKindScore(yatzyThreeOfAKindA)).toBe(9);
+      expect(service.calculateThreeOfAKindScore(yatzyThreeOfAKindB)).toBe(15);
+      expect(service.calculateThreeOfAKindScore(yatzyThreeOfAKindC)).toBe(3);
+      expect(service.calculateThreeOfAKindScore(yatzyNoSimilar)).toBe(0);
     })
   })
   describe('Four Of A Kind', () => {
     it('should score sum of four of a kind ', () => {
       const yatzyFourOfAKind: Dices = new Dices(4, 4,4 ,4,5);
-      expect(YatzyComponent.getScoreForSameKind(yatzyFourOfAKind)).toBe(16);
+      expect(service.calculateFourOfAKindScore(yatzyFourOfAKind)).toBe(16);
     })
 
     it('should score zero in four of a kind ', () => {
       const yatzyNoSimilar: Dices = new Dices(1, 2,3 ,4,5);
-      expect(YatzyComponent.getScoreForSameKind(yatzyNoSimilar)).toBe(0);
+      expect(service.calculateFourOfAKindScore(yatzyNoSimilar)).toBe(0);
     })
   })
   describe('Straights', () => {
     it('should score small straight ', () => {
       const smallStraight: Dices = new Dices(3, 1,2 ,4,5);
-      expect(YatzyComponent.smallStraight(smallStraight)).toBe(15);
+      expect(service.getStraightScore(smallStraight)).toBe(15);
     })
 
     it('should score large straight ', () => {
       const smallStraight: Dices = new Dices(2, 3,4 ,5,6);
-      expect(YatzyComponent.smallStraight(smallStraight)).toBe(20);
+      expect(service.getStraightScore(smallStraight)).toBe(20);
     })
 
     it('should not score small straight', () => {
       const notSmallStraight: Dices = new Dices(1, 2,3 ,6,5);
-      expect(YatzyComponent.smallStraight(notSmallStraight)).toBe(0);
+      expect(service.getStraightScore(notSmallStraight)).toBe(0);
     })
   })
 
   describe('Full House', () => {
     it('should score full house ', () => {
       const fullHouse: Dices = new Dices(3, 1,1 ,3,1);
-      expect(YatzyComponent.fullHouse(fullHouse)).toBe(30);
+      expect(service.getFullHouseScore(fullHouse)).toBe(30);
     })
 
     it('should not score full house', () => {
       const notAFullHouse: Dices = new Dices(1, 2,3 ,6,5);
-      expect(YatzyComponent.fullHouse(notAFullHouse)).toBe(0);
+      expect(service.getFullHouseScore(notAFullHouse)).toBe(0);
     })
   })
-});
 });
